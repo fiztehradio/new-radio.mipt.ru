@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1.0, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?153"></script>
+    <script src="index.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="player">
+        <audio id="player" src="http://radio.mipt.ru:8410/stream"></audio>
+        <div class="player-controls">
+            <div class="play stopped"></div>
+            <div class="volume">
+                <div class="volume-control"></div>
+            </div>
+        </div>
+        <div class="song-name">
+            Пошлая Моллин - Нон-стоп
+        </div>
+    </div>
+    <div class="broadcast-wrap">
+        <div class="broadcast" data-view="utro">
+            <div class="icon"></div>
+            <div class="description">
+                <h3>Бодрое утро!</h3>
+                <p>Ваня и Лера несут чушь</p>
+            </div>
+        </div>
+        <div class="broadcast" data-view="day">
+            <div class="icon"></div>
+            <div class="description">
+                <h3>Дневной тупняк</h3>
+                <p>Все в лучших традициях рэдиохед</p>
+            </div>
+        </div>
+        <div class="broadcast" data-view="night">
+            <div class="icon"></div>
+            <div class="description">
+                <h3>Ночной пиздеж</h3>
+                <p>Ни капли смысла</p>
+            </div>
+        </div>
+    </div>
+    <div class="broadcast-full-view">
+
+    </div>
+    
+</body>
+</html>
