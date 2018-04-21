@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "run": "http-server",
-    "build": "tsc -w"
+    "build": "SET NODE_ENV=WATCH&& node ./config/builder.js",
+    "build-prod": "SET NODE_ENV=PROD&& node ./config/builder.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,5 +14,20 @@
     "@types/jquery": "^3.3.1",
     "http-server": "^0.11.1",
     "typescript": "^2.8.1"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "optimize-css-assets-webpack-plugin": "^4.0.0",
+    "ts-loader": "3.5.0",
+    "webpack": "3.7.1",
+    "autoprefixer": "7.1.5",
+    "css-loader": "0.28.7",
+    "postcss-import": "11.0.0",
+    "postcss-loader": "1.2.2",
+    "postcss-partial-import": "4.1.0",
+    "postcss-smart-import": "0.6.7",
+    "precss": "1.4.0"
   }
 }
